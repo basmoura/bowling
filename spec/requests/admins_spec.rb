@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Admins', type: :request do
   describe 'POST admin' do
     context 'when has valid attributes' do
-      let(:admin_attributes) { FactoryBot.attributes_for(:admin) }
+      let(:admin_attributes) { attributes_for(:admin) }
 
       it 'creates a new Admin' do
         expect do
@@ -13,7 +13,7 @@ RSpec.describe 'Admins', type: :request do
     end
 
     context 'when has invalid attributes' do
-      let(:admin_invalid_attributes) { FactoryBot.attributes_for(:admin, email: nil) }
+      let(:admin_invalid_attributes) { attributes_for(:admin, email: nil) }
 
       it 'returns 422' do
         post admins_path, params: { admin: admin_invalid_attributes }
