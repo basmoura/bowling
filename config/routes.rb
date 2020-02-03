@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   resources :lanes, only: [] do
     resources :games, only: [:index, :create, :update]
   end
+
+  resources :users, only: [:index, :create]
 end
