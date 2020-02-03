@@ -5,4 +5,8 @@ Rails.application.routes.draw do
   resources :bowling_houses, only: [:index, :create] do
     resources :lanes, only: [:index, :create, :update]
   end
+
+  resources :lanes, only: [] do
+    resources :games, only: [:index, :create, :update]
+  end
 end
