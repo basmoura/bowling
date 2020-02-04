@@ -1,0 +1,2 @@
+class Frames::Strike
+end

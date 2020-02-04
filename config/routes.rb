@@ -11,4 +11,10 @@ Rails.application.routes.draw do
   end
 
   resources :users, only: [:index, :create]
+
+  resources :games, only: [] do
+    resources :users, only: [] do
+      resources :frames, only: [:create]
+    end
+  end
 end
