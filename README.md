@@ -13,7 +13,7 @@ This is an API for a Bownling game.
 {
 	"admin": {
 		"name": "Breno Moura",
-		"email": "basmoura@gmail.com",
+		"email": "basbowling@bowlingit.com",
 		"password": "123456",
 		"password_confirmation": "123456"
 	}
